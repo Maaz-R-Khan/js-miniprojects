@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     
+
+    <div id="outer-box"> 
+
+        <h1>Tip Calculator</h1>
+
+        <input type="number" id="billAmount" placeholder="Bill Amount"></input> 
+        <button onclick="showBillAmount()">Submit</button>
+        
+<div id="tips">
+       <h3>Select Tip Amount</h3>
+       <input type="number" id="tipAmount" placeholder="Tip Amount"> </input>
+       <input type="number" id="numPeople" placeholder="Number of People"> </input>
+       <button onclick="calculateTip()">Calculate</button> 
+</div>
+
+ <output id="total-tip" placeholder="Tip Amount"></output> 
+ <output id="total-bill" placeholder="Total Bill(with tip)"> </output>
+ <output id="tip-per-person" placeholder="Tip per person"> </output>
+ <output id="total-per-person" placeholder="Total per person"> </output>
+
+    </div>
+
 </body>
+
+<script src="/index.js"> </script>
 </html>
