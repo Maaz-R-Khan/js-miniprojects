@@ -9,13 +9,19 @@
 </head>
 <body>
 
-    <div id="">  </div>
-    <h2> Click button to generate Computer's Choice</h2>
-    <button id="generateChoice" onclick="generateRandomChoice()">Computer Choice</button> <br>
-    <output class="result"> </output>
-    <h2> Select Your Choice</h2>
-    <button onclick="generateRandomChoice()">Play</button>
-    <output class="result"> </output>
+    <div id="userChoice"> 
+        <h2> Select Your Choice</h2>
+        <button onclick="getUserChoice()" id="rock-button">Rock</button>
+        <button onclick="getUserChoice()"id="paper-button">Paper</button>
+        <button onclick="getUserChoice()" id="paper-button">Scissor</button>
+        <output id="user-output"> </output>
+    </div>
+      
+    <div id="compChoice">  
+        <h2> Click button to generate Computer's Choice</h2>
+        <button id="generateChoice" onclick="generateRandomChoice()">Computer Choice</button> <br>
+        <output id="result"> </output>
+     </div>
 </body>
 
 
