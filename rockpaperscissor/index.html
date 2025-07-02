@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" src="style.css">
-    <script src="index.js"> </script>
 </head>
+
 <body>
 
     <div id="userChoice"> 
         <h2> Select Your Choice</h2>
-        <button onclick="getUserChoice()" id="rock-button">Rock</button>
-        <button onclick="getUserChoice()"id="paper-button">Paper</button>
-        <button onclick="getUserChoice()" id="paper-button">Scissor</button>
+        <button  id="rock-button">Rock</button>
+        <button id="paper-button">Paper</button>
+        <button id="scissor-button">Scissor</button>
+        <br>
         <output id="user-output"> </output>
     </div>
       
     <div id="compChoice">  
-        <h2> Click button to generate Computer's Choice</h2>
-        <button id="generateChoice" onclick="generateRandomChoice()">Computer Choice</button> <br>
+        <h2> Computer's Choice is Random</h2>
+        <button id="generateChoice"> Computer Choice</button> <br>
         <output id="result"> </output>
+        <br>
+        <output id="winner"></output>
      </div>
+      <script src="index.js"> </script>
 </body>
 
 
